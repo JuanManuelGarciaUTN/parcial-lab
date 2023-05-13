@@ -1,0 +1,14 @@
+<app-tabla-pelicula class="top" (peliculaSeleccionada)="onSeleccion($event)"></app-tabla-pelicula>
+<div class="bottom">
+    <div>
+        <button class="borrar" [disabled]="!pelicula" (click)="iniciarBorrado()">Borrar</button>
+        <div *ngIf="borrando">
+            <p>¿Seguro?</p>
+            <button class="si" (click)="borrar()">Si</button>
+            <button class="no" (click)="cancelar()">No</button>
+        </div>
+    </div>
+    <app-detalle-pelicula [pelicula]="pelicula"></app-detalle-pelicula>
+    <app-modificar-pelicula [pelicula]="pelicula"></app-modificar-pelicula>
+</div>
+

@@ -1,0 +1,39 @@
+<!--<div class="detalles">
+    <strong>Nombre</strong>
+    <input>
+    <strong>Tipo</strong>
+    <input>
+    <strong>Fecha de Estreno</strong>
+    <input type="text">
+    <strong>Cantidad de Publico</strong>
+    <input>
+    <strong>Foto de Portada</strong>
+    <input>
+    <button>Modificar</button>
+</div>-->
+<div class="detalles">
+    <div class="input-group">
+      <strong>Nombre</strong>
+      <input type="text" class="form-control" [(ngModel)]="nombre">
+    </div>
+    <div class="input-group">
+      <strong>Tipo</strong>
+      <select class="form-control" [(ngModel)]="tipo">
+        <option *ngFor="let option of options" [value]="option">{{ option }}</option>
+      </select>      
+    </div>
+    <div class="input-group">
+      <strong>Fecha de Estreno</strong>
+      <input type="text" class="form-control" [(ngModel)]="fechaDeEstreno">
+    </div>
+    <div class="input-group">
+      <strong>Cantidad de Publico</strong>
+      <input type="text" class="form-control" [(ngModel)]="cantidadPublico">
+    </div>
+    <div class="input-group">
+      <strong>Foto de Portada</strong>
+      <input type="text" class="form-control" [(ngModel)]="foto">
+    </div>
+    <button class="btn btn-primary" (click)="modificar()">Modificar</button>
+  </div>
+  

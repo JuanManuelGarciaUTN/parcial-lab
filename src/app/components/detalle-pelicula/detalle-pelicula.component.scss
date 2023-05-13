@@ -1,0 +1,24 @@
+.detalles {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  
+  .detalles strong {
+    display: block;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 5px 0px;
+  }
+  
+  .detalles p {
+    font-size: 20px;
+    margin: 0px 10px;
+  }
+  
+  .detalles img {
+    width: 220px;
+    height: 220px;
+    border: 4px whitesmoke solid;
+  }

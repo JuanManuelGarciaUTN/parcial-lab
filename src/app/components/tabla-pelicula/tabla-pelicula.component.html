@@ -1,0 +1,3 @@
+<button *ngFor="let item of peliculas" (click)="seleccionarPelicula(item)">
+    <img [src]="item.foto" [alt]="item.nombre">
+</button>

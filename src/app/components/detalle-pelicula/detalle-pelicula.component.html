@@ -1,0 +1,13 @@
+<div class="detalles">
+    <strong>Nombre</strong>
+    <p>-{{pelicula?.nombre}}</p>
+    <strong>Tipo</strong>
+    <p>-{{pelicula?.tipo}}</p>
+    <strong>Fecha de Estreno</strong>
+    <p>-{{pelicula?.fechaDeEstreno}}</p>
+    <strong>Cantidad de Publico</strong>
+    <p>-{{pelicula?.cantidadPublico}}</p>
+    <strong>Foto de Portada</strong>
+    <img *ngIf="pelicula" [src]="pelicula.foto">
+</div>
+

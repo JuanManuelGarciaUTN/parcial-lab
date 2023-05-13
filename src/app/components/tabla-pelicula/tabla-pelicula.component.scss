@@ -1,0 +1,23 @@
+:host{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto auto auto auto auto;
+    justify-content: start;
+    overflow-y: auto;
+    padding: 10px 5vw;
+    background-color: whitesmoke;
+    border-bottom: 2px black solid;
+}
+
+button{
+    width: 125px;
+    height: 125px;
+    border: 1px black solid;
+    margin: 5px 10px;
+    display: grid;
+}
+
+img{
+    width: 124px;
+    height: 124px;
+    cursor: pointer;
+}
